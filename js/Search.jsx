@@ -28,9 +28,7 @@ class Search extends Component {
           />
         </header>
         <div>
-          {preload.shows.map(show =>
-            <ShowCard key={show.imdbID} show={show} />
-          )}
+          {preload.shows.map(show => <ShowCard key={show.imdbID} {...lsshow} />)}
         </div>
       </div>
     );
